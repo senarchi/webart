@@ -60,7 +60,7 @@ button:hover {
   margin-bottom: 30px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   form {
       padding: 10px;
