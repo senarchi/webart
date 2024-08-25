@@ -150,7 +150,7 @@ const UpdateProfileForm = () => {
                  'Authorization': `Bearer ${token}`
             }
         })
-        //"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwMSwiaWF0IjoxNzI0NDgxNjg3fQ.Ae64QXTRKngW4GuR1smEZFxLMn7LE9syO5c99IQpHao"
+       
         .then(response => response.json())
         .then(data => {
             console.log('Response',data)

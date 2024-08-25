@@ -36,7 +36,7 @@ const LoginForm = () => {
                 alert('Login successful! Refreshing the page');
                 window.location.reload()
                 // alert ('User ID is '+ data.user_id)
-                // Redirect or store authentication token
+                
             } else if (data.status == '401') {
                 alert('Login failed: ' + data.message);
             }
