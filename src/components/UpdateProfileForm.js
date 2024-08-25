@@ -159,8 +159,10 @@ const UpdateProfileForm = () => {
             } else if (data.error){
                 alert(data.error)
             }
-            else {
-                alert('Profile update failed: ');
+            else if (data.status == '401'){
+                alert(data.message);
+            }else if (data.status == '422'){
+                alert (data.errors[0].user_id)
             }
         })
         .catch(error => console.error('Error:', error));
