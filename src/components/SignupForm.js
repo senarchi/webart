@@ -29,9 +29,9 @@ const SignupForm = () => {
         .then(response => response.json())
         .then(data => {
             console.log('Data',data)
-            console.log(data.errors[0].email)
+            // console.log(data.errors[0].email)
             if (data.success) {
-                alert('Signup successful!');
+                alert('Signup successful!' + data.message);
             } else if (data.errors[0].email){
                 alert(data.errors[0].email)
             }

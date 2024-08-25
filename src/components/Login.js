@@ -32,6 +32,7 @@ const LoginForm = () => {
             // localStorage.setItem('userID', data.user_id)
             
             if (data.success) {
+                alert("USER ID is " + data.data.user_id)
                 alert('Login successful! Refreshing the page');
                 window.location.reload()
                 // alert ('User ID is '+ data.user_id)
